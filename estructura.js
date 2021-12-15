@@ -8,7 +8,8 @@ document.write("L'últim valor de l'array és ====> " + array[4])
 */
 
 //Ex2
-let array = Array.from({length: 5}, () => Math.floor(Math.random() *5))
+let array = Array.from({length: 5}, () => Math.floor(Math.random() *10))
     document.write(array)
-
-    let basurilla = [45,35, ...array, ]
+    
+let array2 = [45,35, ...array, ]
+    document.write("<br/>" + basurilla)
