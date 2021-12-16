@@ -73,3 +73,27 @@ var elevarCub = numeros.map(function(x) {
 document.write("Array inicial ====> " + numeros + "<br>")
 document.write("Array elevat al cub ====> " + elevarCub)
 */
+
+//Ex6
+
+var paraules = ["ampolla", "araña", "mobil", "portatil"]
+var paraulesA = [];
+
+var a = 0
+var cont = 0
+
+for(var i = 0; i < paraules.length; i++) {
+  for(var j = 0; j < paraules[i].length; j++){
+	  if (paraules[i][j] == 'a'){
+      cont++ 
+      if (cont == 2){
+        paraulesA[a] = paraules[i];
+        a++
+      }
+    }
+  }
+  cont = 0
+}
+
+document.write("Array inicial ====> " + paraules + "<br>")
+document.write("Array final ====> " + paraulesA)
