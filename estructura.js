@@ -100,6 +100,7 @@ document.write("Array final ====> " + paraulesA)
 */
 
 //Ex7
+/*
 let map = new Map();
 
 map.set('1', 'cadena')
@@ -109,3 +110,24 @@ map.set(true, 'boolean')
 document.write(map.get('1') + "<br>")
 document.write(map.get(1) + "<br>")
 document.write(map.get(true))
+*/
+
+//Ex8
+let paraula = prompt("Escriu una paraula")
+
+var a = paraula.length
+var cont = 0
+
+for(i = 0; i < paraula.length; i++){
+  if (paraula[i] == paraula[a-1]){
+    a--
+    cont++
+  }
+}
+
+document.write(paraula + "<br>")
+
+if (cont == paraula.length)
+  document.write("La paraula " + paraula + " és un palíndrom")
+ 
+
