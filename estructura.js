@@ -63,3 +63,13 @@ document.write("Segon array<br>" + array2 + "<br>")
 document.write("Array sense repeticions <br>" + array3)
 */
 
+//Ex5
+/*
+var numeros = [1, 3, 6, 10];
+var elevarCub = numeros.map(function(x) {
+   return Math.pow(x,3);
+});
+
+document.write("Array inicial ====> " + numeros + "<br>")
+document.write("Array elevat al cub ====> " + elevarCub)
+*/
