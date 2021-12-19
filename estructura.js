@@ -1,5 +1,6 @@
 //Ex1
 /*
+
 let array = Array.from({length: 5}, () => Math.floor(Math.random() *10))
 
 document.write("L'array aleatori és ====> " + array + "<br/>")
@@ -14,30 +15,21 @@ document.write("L'últim valor de l'array és ====> " + array[4])
 //Ex2
 /*
 let array = Array.from({length: 5}, () => Math.floor(Math.random() *10))
-    document.write(array)
+    document.write("Array inicial ====> " + array)
 
-let array2 = [45,35, ...array, ]
-    document.write("<br/>" + array2)
+let array2 = [45,35, ...array]
+    document.write("<br/>Array afegint els valors de l'anterior ====> " + array2)
 */
 
 //Ex3
 /*
 const array1 = [1,2,3,4,5]
 const array2 = [1,2,3,4,5,6,7]
-const numeros = array1.concat(array2);
-const unicos = [];
+const arrayFusionat = array1.concat(array2);
+const arrayFinal = new Set (arrayFusionat);
 
-document.write("Array fusionat <br>" + numeros)
-
-for(var i = 0; i < numeros.length; i++) {
-  if (!unicos.includes(numeros[i])) {
-    unicos.push(numeros[i]);
-  }
-}
-
-document.write("<br/><br>Array sense repetir <br>" + unicos)
+console.log(arrayFinal)
 */
-
 //Ex4
 /*
 var array1 = [1,2,3,5,7,9]
@@ -65,12 +57,12 @@ document.write("Array sense repeticions <br>" + array3)
 
 //Ex5
 /*
-var numeros = [1, 3, 6, 10];
-var elevarCub = numeros.map(function(x) {
+var arrayfusionat = [1, 3, 6, 10];
+var elevarCub = arrayfusionat.map(function(x) {
    return Math.pow(x,3);
 });
 
-document.write("Array inicial ====> " + numeros + "<br>")
+document.write("Array inicial ====> " + arrayfusionat + "<br>")
 document.write("Array elevat al cub ====> " + elevarCub)
 */
 
@@ -113,10 +105,11 @@ document.write(map.get(true))
 */
 
 //Ex8
+/*
 let paraula = prompt("Escriu una paraula")
 
 var a = paraula.length
-var cont = 0
+var cont = 0+
 
 for(i = 0; i < paraula.length; i++){
   if (paraula[i] == paraula[a-1]){
@@ -129,5 +122,4 @@ document.write(paraula + "<br>")
 
 if (cont == paraula.length)
   document.write("La paraula " + paraula + " és un palíndrom")
- 
-
+*/
