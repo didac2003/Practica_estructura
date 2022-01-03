@@ -30,6 +30,7 @@ const arrayFinal = new Set (arrayFusionat);
 
 console.log(arrayFinal)
 */
+
 //Ex4
 /*
 var array1 = [1,2,3,5,7,9]
@@ -109,9 +110,9 @@ document.write(map.get(true))
 let paraula = prompt("Escriu una paraula")
 
 var a = paraula.length
-var cont = 0+
+var cont = 0
 
-for(i = 0; i < paraula.length; i++){
+for (i = 0; i < paraula.length; i++){
   if (paraula[i] == paraula[a-1]){
     a--
     cont++
